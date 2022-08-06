@@ -1,0 +1,505 @@
+html, body {}
+
+
+
+body {
+  margin:auto;
+  font-size:18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  color: hsl(192, 100%, 9%);
+}
+
+h1, h2, h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+.top-container, .content-boxes, .footer-container {
+  min-width: 375px;
+  width: 100%;
+}
+.content-boxes>div{
+  max-width: 550px;
+}
+.top-container {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("../images/bg-hero-mobile.svg");
+  background-color: hsl(193, 100%, 96%);
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+.top-container>div {
+  max-width: 550px;
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+  text-align: center;
+}
+.header-bar {
+  position: absolute;
+  display: flex;
+  justify-content:space-between;
+  width: 100%;
+  margin-top: 1.5rem;
+}
+.header-bar>* {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.header-bar img {width: 6rem;}
+
+
+.header-bar #link-box {
+  font-size: 0.65rem;
+  font-family:"Poppins", sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+  color: hsl(192, 100%, 9%);
+  border-radius: 1rem;
+  background-color: white;
+  width:6rem;
+  line-height: 1.5rem;
+  box-shadow: 0.1rem 0.1rem 0.25rem hsl(208, 11%, 55%);
+}
+
+.header-bar #link-box:hover , .header-bar #link-box:active {
+  filter: brightness(110%);
+  color: hsl(208, 11%, 55%);
+}
+.heading-content {
+  margin-top: 7rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.heading-content-main {
+  display: flex;
+  flex-direction: column;
+}
+.heading-content h1 {
+  font-size: 1.5rem;
+}
+.heading-content p {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+.heading-content a {
+  color: white;
+  font-size: 0.75rem;
+  font-family: "Poppins", sans-sans-serif;
+  font-weight: 600;
+  background-color: hsl(322, 100%, 66%);
+  text-decoration: none;
+  border-radius: 2rem;
+  width: 15rem;
+  align-self: center;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  margin-bottom: 3rem;
+  box-shadow: 0.1rem 0.1rem 0.25rem lightgray;
+}
+
+.heading-content a:hover, .heading-content a:active {
+  background-color: hsl(322, 100%, 80%);
+}
+.heading-content > img {
+  width:100%;
+  margin-bottom: 2.5rem;
+}
+
+.content-boxes {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
+  align-items: center;
+
+}
+.content-boxes img {
+  max-width: 100%;
+}
+
+.content-boxes #C1 , .content-boxes #C2 , .content-boxes #C3 {
+  text-align: center;
+  border-radius: 1rem;
+  box-shadow: 0 0 0.75rem 0.1rem hsl(0, 0%, 94%);
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  margin-bottom: 2rem;
+  padding: 3rem;
+  padding-bottom: 1.5rem;
+}
+
+.content-boxes h2 {
+  margin-top: 3rem;
+  font-size: 1.25rem;
+}
+.content-boxes p{
+  font-size: 0.85rem;
+  color: hsl(208, 11%, 55%);
+}
+.content-boxes #C3 {
+  margin-bottom: 1rem;
+}
+
+.prompt-box {
+  position: relative;
+  z-index: 10;
+  display:flex;
+  flex-direction: column;
+  background-color: white;
+  top: 4rem;
+  border-radius: 1rem;
+  box-shadow: -0.1rem -0.1rem 0.5rem 0.05rem rgba(0, 37, 46, 10%);
+  margin-left: 1rem;
+  margin-right: 1rem;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+.prompt-box h3 {
+  font-size: 1em;
+}
+.prompt-box a {
+  color: white;
+  font-size: 0.65rem;
+  font-family: "Poppins", sans-sans-serif;
+  font-weight: 600;
+  background-color: hsl(322, 100%, 66%);
+  text-decoration: none;
+  border-radius: 2rem;
+  width: 12rem;
+  align-self: center;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  box-shadow: 0.15rem 0.25rem 0.25rem hsl(0, 0%, 90%);
+}
+
+.prompt-box a:hover, .prompt-box a:active {
+  background-color: hsl(322, 100%, 80%);
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: hsl(192, 100%, 9%);
+  color: white;
+}
+.footer-container > * {
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
+  max-width: 400px;
+}
+.footer-container>img {
+  margin-top:8rem;
+  align-self: baseline;
+  width: 8rem;
+  margin-bottom: 1rem;
+}
+
+.footer-container .contact-box {
+  display: grid;
+  grid-template-columns: 2rem auto;
+  grid-template-rows: 3.5rem auto auto auto;
+  margin-top: 8rem;
+}
+
+.contact-box #logo {
+  grid-column: 1/3;
+  width: 10rem;
+}
+.contact-box #ico {
+  margin-top: 1.5rem;
+  justify-content: center;
+  text-align: center;
+  width: 16px;
+}
+.contact-box address {
+  display: flow;
+  margin-top: 1rem;
+  font-size: 0.85rem;
+}
+.contact-box a {
+  text-decoration: none;
+  color: white;
+  margin-top: 1rem;
+  font-size: 0.85rem;
+}
+
+.contact-box a:hover {
+  color: hsl(322, 100%, 66%);
+}
+
+
+.links-box {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  align-items: flex-start;
+  margin-top: 3.5rem;
+  width: 100%;
+  font-size: 1rem;
+  /* margin-left: 0; */
+  /* margin-right: 0; */
+}
+
+.links-box a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 1.25rem;
+}
+
+.socialmedia-box {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.socialmedia-box a{
+  filter: invert(1);
+}
+.socialmedia-box a:hover, .socialmedia-box a:active {
+  filter: invert(53%) sepia(34%) saturate(3956%) hue-rotate(294deg) brightness(99%) contrast(105%);
+}
+.socialmedia-box img {
+  width:1rem;
+  height: 1rem;
+  border: 1px solid black;
+  border-radius: 50%;
+  padding: 0.5rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.footer-container>p {
+  margin-top: 1rem;
+  font-size: 0.75rem;
+  margin-bottom: 4rem;
+}
+
+@media only screen and (min-width: 450px){
+  .links-box {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+  }
+}
+
+@media only screen and (min-width:1100px){
+
+  /* ========================
+      TOP CONTAINER LAYOUT
+     ========================*/
+
+  .top-container {
+    background-image: url("../images/bg-hero-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    display: grid;
+    justify-content: center;
+  }
+  .top-container > div {
+    max-width: 1296px;
+    margin-left: 4.5rem;
+    margin-right: 4.5rem;
+  }
+  .header-bar {
+    position: static;
+    width: auto;
+    margin-top: 3rem;
+    align-items: center;
+  }
+  .header-bar img {
+    width: 12rem;
+  }
+  .header-bar #link-box {
+    width: 12rem;
+    font-size: 0.75rem;
+    line-height: 2.6rem;
+    border-radius: 2rem;
+}
+
+.heading-content {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: auto 55%;
+  margin-bottom: 4rem;
+
+}
+
+.heading-content img {
+  grid-row: 1/3;
+  grid-column: 2/2;
+  max-width: 718px;
+  margin-bottom: 0;
+}
+.heading-content-main {
+  grid-row: 1/3;
+  padding-right: 5rem;
+  margin: auto;
+}
+
+
+.heading-content-main h1 {
+  font-size: 2.35rem;
+  text-align: left;
+}
+
+.heading-content-main p {
+  font-size: 1.10rem;
+  text-align: left;
+}
+
+.heading-content-main a {
+  align-self: flex-start;
+  font-size: 0.8rem;
+  width: 14rem;
+  height: 1.5rem;
+  line-height: 1.5rem;
+}
+
+
+/* ========================
+    CONTENT BOXES LAYOUT
+   ========================*/
+
+
+.content-boxes {
+    display:flex;
+    flex-direction: column;
+    margin-top: 10rem;
+    max-width: 1440px;
+}
+
+.content-boxes #C1, .content-boxes #C2, .content-boxes #C3 {
+  max-width: 1200px;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.content-boxes #C2 {
+  flex-direction: row;   /* yeah, I know I should use :nth-child(even) to get
+                            alternating effect, and possibility to add another
+                            n amount of boxes, but it will screw up my prompt box.
+                            cons of doing it mobile-first I guess:D
+                            cheers, snuwpl */}
+.content-box-text {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 5rem;
+  margin-right: 15rem;
+}
+.content-box-text h2, .content-box-text p {
+  text-align: left;
+}
+
+.content-box-text h2 {
+  font-size: 1.75rem;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.content-box-text p {
+  font-size: 1.15rem;
+}
+.content-boxes #C2 .content-box-text {
+  margin-left: 15rem;
+  margin-right: 0;
+}
+
+.content-boxes > div img {
+  max-width: 35%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.content-boxes #C2 img {
+  padding-left: 5rem;
+}
+.content-boxes #C3 {
+  margin-bottom:6rem;
+}
+.content-boxes .prompt-box {
+  max-width: none;
+  width: 60%;
+  top: 6rem;
+}
+
+.prompt-box h3 {
+  font-size: 2rem;
+}
+
+.prompt-box a {
+
+  font-size: 1.15rem;
+  width: 24rem;
+  height: 3rem;
+  line-height: 3rem;
+  margin-bottom: 2rem;
+
+}
+
+/* ========================
+    FOOTER CONTAINER LAYOUT
+   ========================*/
+
+.footer-container {
+  justify-content: center;
+}
+
+.footer-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  max-width: 1296px;
+  margin: 4rem 4rem 6rem 4rem;
+
+
+}
+.contact-box {
+  max-width: 560px;
+}
+.contact-box #logo {
+  width: 16rem;
+}
+
+.contact-box address, .contact-box a {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin-top: 2rem;
+}
+.contact-box #ico {
+  margin-top: 2.5rem;
+}
+.links-box {
+  /* flex-basis: 30%; */
+  max-width: 420px;
+  grid-template-columns: auto auto;
+  margin-left: 8rem;
+  margin-right: 8rem;
+  margin-top: 8rem;
+}
+.links-box a{
+  font-size: 1.1rem;
+}
+.socialmedia-box {
+  max-width: 350px;
+}
+.footer-container p {
+  font-size: 1rem;
+  margin-left: 45%;
+}
+}
